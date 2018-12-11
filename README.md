@@ -19,5 +19,18 @@ volume={56},
 number={10},
 pages={5893-5909},
 ISSN={0196-2892},
-month={Oct}}
+month={Oct},}
 ```
+
+## Installation
+* Install Keras from https://github.com/keras-team/keras with Python2.
+  - Note: This repo is trained with the Theano backend. For the Tensorflow backend users, please refer to https://keras.io/#configuring-your-keras-backend for technical support.
+
+* Clone this repo
+```
+git clone https://github.com/YonghaoXu/SSUN
+```
+
+## Dataset
+* Download the [Pavia University dataset](http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes) , and put it in the `data/` folder.
+
