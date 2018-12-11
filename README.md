@@ -23,14 +23,17 @@ month={Oct},}
 ```
 
 ## Installation
-* Install Keras from https://github.com/keras-team/keras with Python2.
+* Install Keras from https://github.com/keras-team/keras with Python 2.
   - Note: This repo is trained with the Theano backend. For the Tensorflow backend users, please refer to https://keras.io/#configuring-your-keras-backend for technical support.
 
-* Clone this repo
+* Clone this repo.
 ```
 git clone https://github.com/YonghaoXu/SSUN
 ```
 
 ## Dataset
-* Download the [Pavia University dataset](http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes) , and put it in the `data/` folder.
+* Download the [Pavia University dataset](http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes).
 
+## Usage
+* Replace the file path for the hyperspectral data in `HyperFunctions.py` with yours.
+* Run `SSUN.py`.
