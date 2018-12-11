@@ -19,5 +19,5 @@ volume={56},
 number={10},
 pages={5893-5909},
 ISSN={0196-2892},
-month={Oct},}
+month={Oct}}
 ```
