@@ -2,6 +2,8 @@
 
 Keras implementation of our method for hyperspectral image classification.
 
+![](Figure/Framework.jpg)
+
 ## Paper
 [Spectral–Spatial Unified Networks for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/8356713)
 
