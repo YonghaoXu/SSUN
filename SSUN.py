@@ -26,20 +26,16 @@ def LSTMMCNN_RS(time_step,nb_features,num_PC,img_rows,img_cols):
     LSTMSpectral = LSTM(128,name='LSTMSpectral',consume_less='gpu',W_regularizer=l2(0.0001),U_regularizer=l2(0.0001))(LSTMInput)
     
     LSTMDense = Dense(128,activation='relu', name='LSTMDense')(LSTMSpectral)
-    #DROP = Dropout(0.5,name='DROP')(LSTMDense)
+   
     LSTMSOFTMAX = Dense(nb_classes,activation='softmax', name='LSTMSOFTMAX')(LSTMDense)    
     
     CNNInput = Input(shape=[num_PC,img_rows,img_cols],name='CNNInput')
 
-    CONV1 = Convolution2D(32, 3, 3, activation='relu', border_mode='same', name='CONV1')(CNNInput)
-    #DROP1 = Dropout(0.5,name='DROP1')(CONV1)
-    POOL1 = MaxPooling2D((1, 2, 2), strides=(2,2), name='POOL1')(CONV1)
-    
+    CONV1 = Convolution2D(32, 3, 3, activation='relu', border_mode='same', name='CONV1')(CNNInput) 
+    POOL1 = MaxPooling2D((1, 2, 2), strides=(2,2), name='POOL1')(CONV1)   
     CONV2 = Convolution2D(32, 3, 3, activation='relu', border_mode='same', name='CONV2')(POOL1)
-    #DROP2 = Dropout(0.5,name='DROP2')(CONV2)
     POOL2 = MaxPooling2D((1,2, 2), strides=(2,2), name='POOL2')(CONV2)
     CONV3 = Convolution2D(32, 3, 3, activation='relu', border_mode='same', name='CONV3')(POOL2)
-    #DROP3 = Dropout(0.5,name='DROP3')(CONV3)
     POOL3 = MaxPooling2D((1,2,2), strides=(2,2), name='POOL3')(CONV3)
     
     FLATTEN1 = Flatten(name='FLATTEN1')(POOL1)
@@ -51,8 +47,7 @@ def LSTMMCNN_RS(time_step,nb_features,num_PC,img_rows,img_cols):
     DENSE3 = Dense(128,activation='relu', name='DENSE3')(FLATTEN3)
     
     CNNDense = merge([DENSE1, DENSE2, DENSE3], mode='sum', name='CNNDense')
-    #CNNDense = Dense(128,activation='relu', name='CNNDense')(DENSE4)
-    
+
     
     CNNSOFTMAX = Dense(nb_classes,activation='softmax', name='CNNSOFTMAX')(CNNDense)
     
@@ -80,7 +75,6 @@ def LSTM_RS(time_step,nb_features):
     LSTMSpectral = LSTM(128,name='LSTMSpectral',consume_less='gpu',W_regularizer=l2(0.0001),U_regularizer=l2(0.0001))(LSTMInput)
     
     LSTMDense = Dense(128,activation='relu', name='LSTMDense')(LSTMSpectral)
-    #DROP = Dropout(0.5,name='DROP')(LSTMDense)
     LSTMSOFTMAX = Dense(nb_classes,activation='softmax', name='LSTMSOFTMAX')(LSTMDense)
     
     model = Model(input=[LSTMInput], output=[LSTMSOFTMAX])
@@ -95,14 +89,10 @@ def MCNN_RS(num_PC,img_rows,img_cols):
     CNNInput = Input(shape=[num_PC,img_rows,img_cols],name='CNNInput')
 
     CONV1 = Convolution2D(32, 3, 3, activation='relu', border_mode='same', name='CONV1')(CNNInput)
-    #DROP1 = Dropout(0.5,name='DROP1')(CONV1)
     POOL1 = MaxPooling2D((1, 2, 2), strides=(2,2), name='POOL1')(CONV1)
-    
     CONV2 = Convolution2D(32, 3, 3, activation='relu', border_mode='same', name='CONV2')(POOL1)
-    #DROP2 = Dropout(0.5,name='DROP2')(CONV2)
     POOL2 = MaxPooling2D((1,2, 2), strides=(2,2), name='POOL2')(CONV2)
     CONV3 = Convolution2D(32, 3, 3, activation='relu', border_mode='same', name='CONV3')(POOL2)
-    #DROP3 = Dropout(0.5,name='DROP3')(CONV3)
     POOL3 = MaxPooling2D((1,2,2), strides=(2,2), name='POOL3')(CONV3)
     
     FLATTEN1 = Flatten(name='FLATTEN1')(POOL1)
@@ -114,8 +104,7 @@ def MCNN_RS(num_PC,img_rows,img_cols):
     DENSE3 = Dense(128,activation='relu', name='DENSE3')(FLATTEN3)
     
     CNNDense = merge([DENSE1, DENSE2, DENSE3], mode='sum', name='CNNDense')
-    #CNNDense = Dense(128,activation='relu', name='CNNDense')(DENSE4)
-    
+
     
     CNNSOFTMAX = Dense(nb_classes,activation='softmax', name='CNNSOFTMAX')(CNNDense)
     
