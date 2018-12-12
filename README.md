@@ -22,13 +22,12 @@ ISSN={0196-2892},
 month={Oct}}
 
 @inproceedings{bglstm,
-  title={A Band Grouping Based LSTM Algorithm for Hyperspectral Image Classification},
-  author={Y. Xu and B. Du and L. Zhang and F. Zhang},
-  booktitle={CCF Chinese Conference on Computer Vision},
-  pages={421--432},
-  year={2017},
-  organization={Springer}
-}
+title={A Band Grouping Based LSTM Algorithm for Hyperspectral Image Classification},
+author={Y. Xu and B. Du and L. Zhang and F. Zhang},
+booktitle={CCF Chinese Conference on Computer Vision},
+pages={421--432},
+year={2017},
+organization={Springer}}
 ```
 
 ## Installation
