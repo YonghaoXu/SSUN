@@ -7,7 +7,7 @@ Keras implementation of our method for hyperspectral image classification.
 ## Paper
 [Spectral–Spatial Unified Networks for Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/8356713)
 
-Please cite our paper if you find it useful for your research.
+Please cite our papers if you find it useful for your research.
 
 ```
 @article{ssun,
@@ -20,6 +20,15 @@ number={10},
 pages={5893-5909},
 ISSN={0196-2892},
 month={Oct}}
+
+@inproceedings{bglstm,
+  title={A Band Grouping Based LSTM Algorithm for Hyperspectral Image Classification},
+  author={Y. Xu and B. Du and L. Zhang and F. Zhang},
+  booktitle={CCF Chinese Conference on Computer Vision},
+  pages={421--432},
+  year={2017},
+  organization={Springer}
+}
 ```
 
 ## Installation
