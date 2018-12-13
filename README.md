@@ -50,4 +50,5 @@ git clone https://github.com/YonghaoXu/SSUN
 * Change the `s1s2` index in `SSUN.py` to switch from different grouping strategies.
   - Left: Strategy 1 `s1s2 = 1`
   - Right: Strategy 2 `s1s2 = 2` 
+  
 ![](Figure/Strategy.jpg)
