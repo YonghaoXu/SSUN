@@ -48,6 +48,6 @@ git clone https://github.com/YonghaoXu/SSUN
 * Replace the file path for the hyperspectral data in `HyperFunctions.py` with yours.
 * Run `SSUN.py`.
 * Change the `s1s2` index in `SSUN.py` to switch from different grouping strategies.
- - Left: Strategy 1 `s1s2 = 1` 
- - Right: Strategy 2 `s1s2 = 2` 
+  - Left: Strategy 1 `s1s2 = 1`
+  - Right: Strategy 2 `s1s2 = 2` 
 ![](Figure/Strategy.jpg)
