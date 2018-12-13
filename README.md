@@ -42,7 +42,7 @@ git clone https://github.com/YonghaoXu/SSUN
 ```
 
 ## Dataset
-* Download the [Pavia University dataset](http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes).
+* Download the [Pavia University image](http://www.ehu.eus/ccwintco/uploads/e/ee/PaviaU.mat) and the corresponding [annotations](http://www.ehu.eus/ccwintco/uploads/5/50/PaviaU_gt.mat).
 
 ## Usage
 * Replace the file path for the hyperspectral data in `HyperFunctions.py` with yours.
