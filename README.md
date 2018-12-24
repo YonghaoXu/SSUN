@@ -33,8 +33,8 @@ Please cite our papers if you find it useful for your research.
 ```
 
 ## Installation
-* Install Keras 1.1.0 from https://github.com/keras-team/keras with Python 2.7.
-  - Note: This repo is trained with the Theano 0.8.2 backend. For the Tensorflow backend users, please refer to https://keras.io/#configuring-your-keras-backend for technical support.
+* Install `Keras 1.1.0` from https://github.com/keras-team/keras with `Python 2.7`.
+  - Note: This repo is trained with the `Theano 0.8.2` backend. For the `Tensorflow` backend users, please refer to https://keras.io/#configuring-your-keras-backend for technical support.
 
 * Clone this repo.
 ```
