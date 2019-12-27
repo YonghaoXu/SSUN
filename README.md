@@ -33,8 +33,8 @@ Please cite our papers if you find it useful for your research.
 ```
 
 ## Installation
-* Install `Keras 1.1.0` from https://github.com/keras-team/keras with `Python 2.7`.
-  - Note: This repo is trained with the `Theano 0.8.2` backend. For the `Tensorflow` backend users, please refer to https://keras.io/#configuring-your-keras-backend for technical support.
+* Install `Keras 2.2.4` from https://github.com/keras-team/keras with `Python 3.6`.
+  - Note: This repo is now updated with the `Tensorflow` backend engine. We have tested the code with `Tensorflow 1.13`. For the `Theano` backend users, please refer to https://keras.io/#configuring-your-keras-backend for technical support.
 
 * Clone this repo.
 ```
@@ -52,3 +52,6 @@ git clone https://github.com/YonghaoXu/SSUN
   - Right: Strategy 2 `s1s2 = 2` 
   
 ![](Figure/Strategy.jpg)
+
+## Note
+* 12/2019: Update the code with the `Tensorflow` backend engine.
